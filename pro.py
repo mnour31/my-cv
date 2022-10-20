@@ -9,8 +9,3 @@ my_cv = Flask(__name__)
 @my_cv.route('/')
 def home():
     return render_template("/home.html" , ptitle="CV")
-
-
-if __name__ == "__main__":
-
-    my_cv.run(debug=True , port=6003)
